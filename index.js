@@ -35,7 +35,7 @@ function injectLine() {
 const newLine1 = document.createElement('div')
 newLine1.className = "linetext"
 newLine1.innerText = "This road never ends"
-newLine1.style.left = Math.random() * window.innerWidth - 200 + 'px'
+newLine1.style.left = 100 + Math.random() * (window.innerWidth - 300) + 'px'
 newLine1.style.top = wrapper.offsetHeight - 200 + 'px'
 document.body.appendChild(newLine1)
 
@@ -154,9 +154,25 @@ document.body.appendChild(newLine1)
     if (warningLine > 141) {
         newLine1.innerText = ""
     }
+
+    if (warningLine > 143) {
+        newLine1.innerText = "With the warnings, not the road"
+    }
+
+    if (warningLine > 144) {
+        newLine1.innerText = ""
+    }
+
+    if (warningLine > 145) {
+        newLine1.innerText = "The road is neverending!"
+    }
+
+    if (warningLine > 146) {
+        newLine1.innerText = ""
+    }
     
     if (warningLine > 250) {
-        newLine1.innerText = "Oh My God"
+        newLine1.innerText = "OH MY GOD!!!"
     }
 
     if (warningLine > 251) {
